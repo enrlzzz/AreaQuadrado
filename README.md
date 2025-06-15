@@ -1,18 +1,43 @@
-## Getting Started
+# 📐 Trapezoid Area Calculation in Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This repository contains a simple Java code example for calculating the **area of a trapezoid**, using `double` variables and console output.
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## 📌 Problem Description
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+The goal is to calculate the area of a trapezoid based on the following mathematical formula:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Area = (b + B) / 2 × h
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
+Where:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- **b** → Smaller base
+- **B** → Larger base
+- **h** → Height
+
+---
+
+## 🖥️ Source Code
+
+```java
+package main;
+
+public class Aula24SaidaDadosJava {
+
+    public static void main(String[] args) {
+    
+        double b, B, h, area;
+        
+        b = 6.0;
+        B = 8.0;
+        h = 5.0;
+        
+        area = (b + B) / 2.0 * h;
+        
+        System.out.println(area);
+    }
+}
+
+
